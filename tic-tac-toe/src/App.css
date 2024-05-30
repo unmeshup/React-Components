@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+}
+
+.game {
+  max-width: calc(3 * 100px);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.status {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  border: 2px solid #cccccc;
+  cursor: pointer;
+  transition: grey 0.3s ease-in-out;
+  color: #333333; /* Dark font color for X and O */
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.reset-button {
+  padding: 5px 10px;
+}
+
+/* Center the container's content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px; /* Add a margin to create a gap */
+}
